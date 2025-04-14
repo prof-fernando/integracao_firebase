@@ -3,4 +3,18 @@ Email:
 Senha:
 <input type="password" [(ngModel)]="senha" />
 
+<h2>
+  {{ title }}
+</h2>
+
 <button (click)="logar()">login</button>
+
+<button mat-raised-button (click)="enviarEmail()">
+  <mat-icon>mail</mat-icon>
+  Enviar email
+</button>
+
+<button mat-button (click)="criarUsuario()">
+  <mat-icon>add</mat-icon>
+  Criar usuario
+</button>
